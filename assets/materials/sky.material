@@ -1,7 +1,7 @@
 {
 	"tags": "modified",
 	"luminance": 1,
-	"turbidity": 10,
+	"turbidity": 1000,
 	"rayleigh": 2,
 	"mieCoefficient": 0.005,
 	"mieDirectionalG": 0.8,
@@ -24,7 +24,6 @@
 		1,
 		0
 	],
-	"dithering": false,
 	"id": "cdc8b068-1ebd-4c87-8cb0-f48a85181271",
 	"name": "sky",
 	"metadata": {
@@ -61,6 +60,6 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 35,
+	"uniqueId": 32,
 	"customType": "BABYLON.SkyMaterial"
 }

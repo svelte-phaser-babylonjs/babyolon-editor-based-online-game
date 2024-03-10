@@ -32,7 +32,6 @@
 		"getAlphaFromRGB": false,
 		"level": 1,
 		"coordinatesIndex": 0,
-		"optimizeUVAllocation": true,
 		"coordinatesMode": 0,
 		"wrapU": 1,
 		"wrapV": 1,
@@ -58,11 +57,6 @@
 	"reflectionTexture": {
 		"tags": null,
 		"url": "scene/parking.env",
-		"boundingBoxPosition": [
-			0,
-			0,
-			0
-		],
 		"rotationY": 0,
 		"files": [],
 		"textureMatrix": {
@@ -95,7 +89,6 @@
 		"getAlphaFromRGB": false,
 		"level": 1,
 		"coordinatesIndex": 0,
-		"optimizeUVAllocation": true,
 		"coordinatesMode": 3,
 		"wrapU": 0,
 		"wrapV": 0,
@@ -147,7 +140,6 @@
 		"getAlphaFromRGB": false,
 		"level": 1,
 		"coordinatesIndex": 0,
-		"optimizeUVAllocation": true,
 		"coordinatesMode": 0,
 		"wrapU": 1,
 		"wrapV": 1,
@@ -252,8 +244,8 @@
 		"_toneMappingType": 0,
 		"_contrast": 1,
 		"vignetteStretch": 0,
-		"vignetteCenterX": 0,
-		"vignetteCenterY": 0,
+		"vignetteCentreX": 0,
+		"vignetteCentreY": 0,
 		"vignetteWeight": 1.5,
 		"vignetteColor": [
 			0,
@@ -264,8 +256,6 @@
 		"vignetteCameraFov": 0.5,
 		"_vignetteBlendMode": 0,
 		"_vignetteEnabled": false,
-		"_ditheringEnabled": false,
-		"_ditheringIntensity": 0.00392156862745098,
 		"_skipFinalColorClamp": false,
 		"_applyByPostProcess": true,
 		"_isEnabled": true
@@ -307,7 +297,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 37,
+	"uniqueId": 34,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,
