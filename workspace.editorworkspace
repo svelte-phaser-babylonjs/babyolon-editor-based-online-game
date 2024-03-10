@@ -40,6 +40,10 @@
 		"ect2Options": {
 			"enabled": false,
 			"quality": "etcfast"
+		},
+		"nvidiaTextureTools": {
+			"cliPath": "",
+			"enabled": false
 		}
 	}
 }
