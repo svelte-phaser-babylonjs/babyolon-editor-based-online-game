@@ -1,6 +1,5 @@
 import { Scene } from "@babylonjs/core";
 import UI from "./ui";
-import { Control } from "@babylonjs/gui";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -20,15 +19,14 @@ import { Control } from "@babylonjs/gui";
  * The function "onInitialize" is called immediately after the constructor is called.
  * The functions "onStart" and "onUpdate" are called automatically.
  */
-export default class MainMenuUI extends UI {
-
+export default class GeneralUI extends UI {
     /**
      * Override constructor.
      * @warn do not fill.
      */
     // @ts-ignore ignoring the super call as we don't want to re-init
     constructor(scene: Scene, layer: number) {
-        super("menu", scene, layer);
+        super("general", scene, layer);
 
         this.initialze();
     }
@@ -40,8 +38,8 @@ export default class MainMenuUI extends UI {
     }
 
     private setupControls() {
-        this.getControl("PlayButton").onPointerClickObservable.add(() => {
-            this.emit('load-multiplayer-game');
+        this.getControl("CreateJoinRoomButton").onPointerClickObservable.add(() => {
+            this.emit('create-join-room');
         });
     }
 }

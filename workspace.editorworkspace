@@ -1,6 +1,6 @@
 {
 	"editorVersion": "4.7.0",
-	"lastOpenedScene": "projects/menu_scene/scene.editorproject",
+	"lastOpenedScene": "projects/scene/scene.editorproject",
 	"serverPort": 1338,
 	"generateSceneOnSave": true,
 	"firstLoad": false,
@@ -9,6 +9,26 @@
 	"pluginsPreferences": {},
 	"packageManager": "npm",
 	"outputSceneDirectory": "",
+	"plugins": [
+		{
+			"enabled": false,
+			"fromNpm": true,
+			"name": "file-loader",
+			"path": "file-loader"
+		},
+		{
+			"enabled": false,
+			"fromNpm": true,
+			"name": "url-loader",
+			"path": "url-loader"
+		},
+		{
+			"enabled": false,
+			"fromNpm": true,
+			"name": "css-loader",
+			"path": "css-loader"
+		}
+	],
 	"https": {
 		"enabled": false
 	},

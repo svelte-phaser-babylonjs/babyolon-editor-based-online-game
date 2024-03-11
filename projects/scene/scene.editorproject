@@ -52,7 +52,9 @@
 		"cube-d66c05ad-967f-4f69-a6fb-7d47281b641c.json",
 		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
 		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
-		"wall-f824df87-ae33-41d9-ba8f-551d2083a2be.json"
+		"wall-f824df87-ae33-41d9-ba8f-551d2083a2be.json",
+		"Managers-f1334591-4c0a-4250-b3bb-0e758fa28d98.json",
+		"UIManager-a5871090-bfa8-43df-9047-caf894848b9e.json"
 	],
 	"transformNodes": [],
 	"particleSystems": [],
@@ -399,7 +401,8 @@
 			"metadata": {
 				"script": {
 					"name": "None"
-				}
+				},
+				"detached": false
 			},
 			"uniqueId": 7,
 			"type": "UniversalCamera",

@@ -98,8 +98,8 @@
 		"_toneMappingType": 0,
 		"_contrast": 1,
 		"vignetteStretch": 0,
-		"vignetteCentreX": 0,
-		"vignetteCentreY": 0,
+		"vignetteCenterX": 0,
+		"vignetteCenterY": 0,
 		"vignetteWeight": 1.5,
 		"vignetteColor": [
 			0,
@@ -110,6 +110,8 @@
 		"vignetteCameraFov": 0.5,
 		"_vignetteBlendMode": 0,
 		"_vignetteEnabled": false,
+		"_ditheringEnabled": false,
+		"_ditheringIntensity": 0.00392156862745098,
 		"_skipFinalColorClamp": false,
 		"_applyByPostProcess": true,
 		"_isEnabled": true

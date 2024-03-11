@@ -34,17 +34,22 @@ export class Game {
 
         BabylonFileLoaderConfiguration.LoaderInjectedPhysicsEngine = CANNON;
 
-        await appendScene(this.scene, rootUrl, "../menu_scene/scene.babylon");
 
-        this.scene.executeWhenReady(() => {
-            // Attach camera.
-            if (!this.scene.activeCamera) {
-                throw new Error("No camera defined in the scene. Please add at least one camera in the project or create one yourself in the code.");
-            }
-            this.scene.activeCamera.attachControl(this.engine.getRenderingCanvas(), false);
+        document.fonts.load("14px GoldPanda").then(() => {
+            document.fonts.ready.then(async () => {
+                await appendScene(this.scene, rootUrl, "../menu_scene/scene.babylon");
 
-            // Render.
-            this.engine.runRenderLoop(() => this.scene.render());
+                this.scene.executeWhenReady(() => {
+                    // Attach camera.
+                    if (!this.scene.activeCamera) {
+                        throw new Error("No camera defined in the scene. Please add at least one camera in the project or create one yourself in the code.");
+                    }
+                    this.scene.activeCamera.attachControl(this.engine.getRenderingCanvas(), false);
+
+                    // Render.
+                    this.engine.runRenderLoop(() => this.scene.render());
+                });
+            });
         });
     }
 

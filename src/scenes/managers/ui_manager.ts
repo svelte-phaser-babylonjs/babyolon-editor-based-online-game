@@ -1,6 +1,6 @@
+import { ArcRotateCamera, Camera, Vector3 } from "@babylonjs/core";
 import { Node } from "@babylonjs/core/node";
-import MainMenuUI from "../UI/main_menu_ui";
-import { Game } from "../..";
+import GeneralUI from "../UI/general_ui";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -20,9 +20,13 @@ import { Game } from "../..";
  * The function "onInitialize" is called immediately after the constructor is called.
  * The functions "onStart" and "onUpdate" are called automatically.
  */
-export default class MenuManager extends Node {
+export default class UIManager extends Node {
 
-    private mainMenuUI: MainMenuUI;
+    private _camera: Camera;
+    private _uiLayer: number = 2;
+
+    private _generalUI: GeneralUI;
+
 
     /**
      * Override constructor.
@@ -50,18 +54,22 @@ export default class MenuManager extends Node {
      * Called on the scene starts.
      */
     public onStart(): void {
+        this.initializeUICamera();
         this.loadUI();
     }
 
-    private loadUI() {
-        this.mainMenuUI = new MainMenuUI(this._scene, this._scene.activeCamera.layerMask);
+    private initializeUICamera() {
+        this._camera = new ArcRotateCamera("ui-cam", 0, 0.8, 100, Vector3.Zero(), this._scene);
+        this._camera.layerMask = this._uiLayer;
 
-        this.mainMenuUI.addListener("load-multiplayer-game", this.callMultiplayerGame);
+        this._scene.activeCameras = [this._scene.activeCamera, this._camera];
     }
 
-    private async callMultiplayerGame() {
-        if ("game" in window) {
-            (window["game"] as Game).loadScene("scene");
-        }
+    private loadUI() {
+        this.loadGeneralUI();
+    }
+
+    private loadGeneralUI() {
+        this._generalUI = new GeneralUI(this._scene, this._uiLayer);
     }
 }
