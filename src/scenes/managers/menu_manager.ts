@@ -1,4 +1,6 @@
 import { Node } from "@babylonjs/core/node";
+import MainMenuUI from "../UI/main_menu_ui";
+import { Game } from "../..";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -19,6 +21,9 @@ import { Node } from "@babylonjs/core/node";
  * The functions "onStart" and "onUpdate" are called automatically.
  */
 export default class MenuManager extends Node {
+
+    private mainMenuUI: MainMenuUI;
+
     /**
      * Override constructor.
      * @warn do not fill.
@@ -45,21 +50,18 @@ export default class MenuManager extends Node {
      * Called on the scene starts.
      */
     public onStart(): void {
-        // ...
+        this.loadUI();
     }
 
-    /**
-     * Called each frame.
-     */
-    public onUpdate(): void {
-        // ...
+    private loadUI() {
+        this.mainMenuUI = new MainMenuUI(this._scene, this._scene.activeCamera.layerMask);
+
+        this.mainMenuUI.addListener("load-multiplayer-game", this.callMultiplayerGame);
     }
 
-    /**
-     * Called on the object has been disposed.
-     * Object can be disposed manually or when the editor stops running the scene.
-     */
-    public onStop(): void {
-        // ...
+    private async callMultiplayerGame() {
+        if ("game" in window) {
+            (window.game as Game).loadScene("scene");
+        }
     }
 }

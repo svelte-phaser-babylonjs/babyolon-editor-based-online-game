@@ -49,6 +49,30 @@ export class Game {
     }
 
     /**
+     * Loads scpecific scene.
+     */
+    public async loadScene(name: string): Promise<void> {
+        let scene = await new Scene(this.engine);
+
+        const rootUrl = "./scenes/_assets/";
+
+        BabylonFileLoaderConfiguration.LoaderInjectedPhysicsEngine = CANNON;
+
+        await appendScene(scene, rootUrl, `../${name}/scene.babylon`);
+        await scene.whenReadyAsync();
+        this.scene.dispose();
+        this.scene = scene;
+
+        this.scene.executeWhenReady(() => {
+            // Attach camera.
+            if (!this.scene.activeCamera) {
+                throw new Error("No camera defined in the scene. Please add at least one camera in the project or create one yourself in the code.");
+            }
+            this.scene.activeCamera.attachControl(this.engine.getRenderingCanvas(), false);
+        });
+    }
+
+    /**
      * Binds the required events for a full experience.
      */
     private _bindEvents(): void {

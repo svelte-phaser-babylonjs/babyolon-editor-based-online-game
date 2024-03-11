@@ -6,6 +6,8 @@ import { ScriptMap } from "./tools";
 export interface ISceneScriptMap {
 	"src/scenes/managers/menu_manager.ts": ScriptMap;
 	"src/scenes/scene/camera.ts": ScriptMap;
+	"src/scenes/UI/main_menu_ui.ts": ScriptMap;
+	"src/scenes/UI/ui.ts": ScriptMap;
 }
 
 /**
@@ -14,4 +16,6 @@ export interface ISceneScriptMap {
 export const scriptsMap: ISceneScriptMap = {
 	"src/scenes/managers/menu_manager.ts": require("./managers/menu_manager"),
 	"src/scenes/scene/camera.ts": require("./scene/camera"),
+	"src/scenes/UI/main_menu_ui.ts": require("./UI/main_menu_ui"),
+	"src/scenes/UI/ui.ts": require("./UI/ui"),
 }

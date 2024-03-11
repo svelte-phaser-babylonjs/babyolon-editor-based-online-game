@@ -24,10 +24,7 @@
 		"pvrTexToolCliPath": {
 			"win32": ""
 		},
-		"nvidiaTextureToolsLink": {
-			"cliPath": "",
-			"enabled": false
-		},
+		"nvidiaTextureToolsLink": {},
 		"forcedFormat": "automatic",
 		"enabledInPreview": false,
 		"astcOptions": {
