@@ -1,6 +1,6 @@
 {
 	"editorVersion": "4.7.0",
-	"lastOpenedScene": "projects/scene/scene.editorproject",
+	"lastOpenedScene": "projects/menu_scene/scene.editorproject",
 	"serverPort": 1338,
 	"generateSceneOnSave": true,
 	"firstLoad": false,
@@ -24,7 +24,10 @@
 		"pvrTexToolCliPath": {
 			"win32": ""
 		},
-		"nvidiaTextureToolsLink": {},
+		"nvidiaTextureToolsLink": {
+			"cliPath": "",
+			"enabled": false
+		},
 		"forcedFormat": "automatic",
 		"enabledInPreview": false,
 		"astcOptions": {
@@ -40,10 +43,6 @@
 		"ect2Options": {
 			"enabled": false,
 			"quality": "etcfast"
-		},
-		"nvidiaTextureTools": {
-			"cliPath": "",
-			"enabled": false
 		}
 	}
 }

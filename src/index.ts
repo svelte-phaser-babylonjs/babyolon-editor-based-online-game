@@ -34,7 +34,7 @@ export class Game {
 
         BabylonFileLoaderConfiguration.LoaderInjectedPhysicsEngine = CANNON;
 
-        await appendScene(this.scene, rootUrl, "../scene/scene.babylon");
+        await appendScene(this.scene, rootUrl, "../menu_scene/scene.babylon");
 
         this.scene.executeWhenReady(() => {
             // Attach camera.
