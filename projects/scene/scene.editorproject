@@ -1,15 +1,12 @@
 {
 	"animationGroups": [],
 	"cameras": [
-		"camera-2e391261-067a-4ec6-8b00-25d7e0738684.json"
+		"PlayerCamera-2e391261-067a-4ec6-8b00-25d7e0738684.json"
 	],
 	"materials": [
 		{
 			"isMultiMaterial": false,
-			"bindedMeshes": [
-				"d66c05ad-967f-4f69-a6fb-7d47281b641c",
-				"f824df87-ae33-41d9-ba8f-551d2083a2be"
-			],
+			"bindedMeshes": [],
 			"json": "materials/cube.material"
 		},
 		{
@@ -39,6 +36,103 @@
 				"b87c0751-53e5-4782-88d9-0461e9457fe1"
 			],
 			"json": "materials/ground.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"34f11373-8472-4e9e-ae78-ee4cc350015c",
+				"d3d7b001-2616-4fcf-9972-488ed772e375"
+			],
+			"json": "meshes/environment/Material-Material.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"6ed54a97-3c03-4857-ba00-4865b7acf80d"
+			],
+			"json": "meshes/environment/Material.008-Material.008.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"bb475a27-dfda-432c-8816-fa5d7a4b9fe0"
+			],
+			"json": "meshes/environment/Bage_blue-Bage_blue.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"487f8deb-d8fc-4f7b-bdaa-95aa708b3359",
+				"fba99cb3-e30f-4104-b9cb-f5822158f148",
+				"04ce07b9-bea5-46b1-8ac2-7d9ea7c63916",
+				"358b74e5-141b-4234-831d-55fa0b8b73a7",
+				"f72e413e-28b8-4404-9d0a-736c32679763",
+				"e3afc66c-2148-46f2-aebe-98d3c851f592"
+			],
+			"json": "meshes/environment/lghtBrown_All-lghtBrown_All.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"387101ca-e694-4c16-9562-d7cdb8768b00",
+				"65eaa219-d01e-4558-837c-c8856ced7592",
+				"9df7a9be-727c-4635-8bd2-f6aad6ee029c",
+				"2748fef6-d9f6-41db-a45d-7506140a818e"
+			],
+			"json": "meshes/environment/Green_Organics-Green_Organics.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"495ff4cb-09db-4e74-b70a-7f824eab2d3e",
+				"4735bb89-7649-4f25-a621-6e434c66953d",
+				"a0a1f48c-afc6-424b-9bf4-2a2401ab5ae9"
+			],
+			"json": "meshes/environment/lambert1-lambert1.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"b63052e4-f4fe-4acc-b5c6-ec4e53ed9409"
+			],
+			"json": "meshes/environment/Gray3-Gray3.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"2db780a7-5dd0-4f92-9a24-b6b631f14f91"
+			],
+			"json": "meshes/environment/Brown_All-Brown_All.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"f42e1629-75dd-4f65-b737-77ce6001b9ed"
+			],
+			"json": "meshes/environment/Black-Black.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"d2ba6d3b-a29a-4222-9854-ec4378b0ef7d"
+			],
+			"json": "meshes/environment/Gold-Gold.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"ea0fe08f-431a-4a76-a0d4-d12f0685c182",
+				"02a105fe-85d9-487d-ac18-b889c7ed180a",
+				"d5db5fe9-8608-4232-bfcd-2e41d669847f"
+			],
+			"json": "meshes/environment/Gray2-Gray2.material"
+		},
+		{
+			"isMultiMaterial": false,
+			"bindedMeshes": [
+				"6ea66edc-1a67-4724-87a8-f6dfd2c9554d"
+			],
+			"json": "meshes/environment/Bage_Red-Bage_Red.material"
 		}
 	],
 	"textures": [
@@ -49,14 +143,47 @@
 	"meshes": [
 		"ground-b87c0751-53e5-4782-88d9-0461e9457fe1.json",
 		"blaster-b6a89645-0d85-44c1-8bf8-b99b8670c51f.json",
-		"cube-d66c05ad-967f-4f69-a6fb-7d47281b641c.json",
 		"sky-c4024c20-1c4f-4be6-9abd-525e2a782174.json",
 		"ball-f28c95a8-f3fc-4ff6-8522-26f3cc6d5d4c.json",
-		"wall-f824df87-ae33-41d9-ba8f-551d2083a2be.json",
-		"Managers-f1334591-4c0a-4250-b3bb-0e758fa28d98.json",
-		"UIManager-a5871090-bfa8-43df-9047-caf894848b9e.json"
+		"UIManager-a5871090-bfa8-43df-9047-caf894848b9e.json",
+		"BigBish01-34f11373-8472-4e9e-ae78-ee4cc350015c.json",
+		"Cloud01-6ed54a97-3c03-4857-ba00-4865b7acf80d.json",
+		"Village01-d824b6a4-064d-4237-9663-cbef1e08c148.json",
+		"Tree_primitive0-487f8deb-d8fc-4f7b-bdaa-95aa708b3359.json",
+		"Tree_primitive1-387101ca-e694-4c16-9562-d7cdb8768b00.json",
+		"Sml_Rock-2db780a7-5dd0-4f92-9a24-b6b631f14f91.json",
+		"Bridge_pt_1_FREE-fba99cb3-e30f-4104-b9cb-f5822158f148.json",
+		"Bridge_pt_2_FREE-04ce07b9-bea5-46b1-8ac2-7d9ea7c63916.json",
+		"Bridge_pt_3-358b74e5-141b-4234-831d-55fa0b8b73a7.json",
+		"Tall_Grass-65eaa219-d01e-4558-837c-c8856ced7592.json",
+		"Tree_Link-9df7a9be-727c-4635-8bd2-f6aad6ee029c.json",
+		"Fence_Wood-ea0fe08f-431a-4a76-a0d4-d12f0685c182.json",
+		"pCylinder1-495ff4cb-09db-4e74-b70a-7f824eab2d3e.json",
+		"BrickWalk_primitive0-b63052e4-f4fe-4acc-b5c6-ec4e53ed9409.json",
+		"BrickWalk_primitive1-02a105fe-85d9-487d-ac18-b889c7ed180a.json",
+		"BrickWalk_primitive2-bb475a27-dfda-432c-8816-fa5d7a4b9fe0.json",
+		"BrickWalk_primitive3-6ea66edc-1a67-4724-87a8-f6dfd2c9554d.json",
+		"Sml_House1_primitive0-4735bb89-7649-4f25-a621-6e434c66953d.json",
+		"Sml_House1_primitive1-f42e1629-75dd-4f65-b737-77ce6001b9ed.json",
+		"Sml_House1_primitive2-f72e413e-28b8-4404-9d0a-736c32679763.json",
+		"Sml_House1_primitive3-d5db5fe9-8608-4232-bfcd-2e41d669847f.json",
+		"Door1_primitive0-a0a1f48c-afc6-424b-9bf4-2a2401ab5ae9.json",
+		"Door1_primitive1-d2ba6d3b-a29a-4222-9854-ec4378b0ef7d.json",
+		"pPipe1-e3afc66c-2148-46f2-aebe-98d3c851f592.json",
+		"Cloud02-d3d7b001-2616-4fcf-9972-488ed772e375.json",
+		"Wall01-2748fef6-d9f6-41db-a45d-7506140a818e.json",
+		"GameManager-b0d3244a-0f34-4dfb-adc3-c1d5509e9643.json"
 	],
-	"transformNodes": [],
+	"transformNodes": [
+		"---------- ENVIRONMENT -----------2498fe4b-752c-44c2-9cf5-e5ffa14a198a.json",
+		"---------- BASICS -----------ab76ecfd-be33-4702-8285-e2257d212e57.json",
+		"---------- MANAGERS -----------ec07c220-13d2-4dbb-8bfd-7c733f0ad3e4.json",
+		"Camera-643d6152-4c72-47cb-aa79-837827de1489.json",
+		"Tree-0ee32561-e3a7-46c2-b081-25ffd434b59d.json",
+		"BrickWalk-b7ece034-05e3-488c-b080-c2f95f46a46d.json",
+		"Sml_House1-718d9d1d-628c-4b6d-9452-3d5769f26723.json",
+		"Door1-76d01bc6-5e6a-4f79-b3c1-83316eae3d68.json"
+	],
 	"particleSystems": [],
 	"lights": [
 		{
@@ -327,12 +454,7 @@
 				"blurKernel": 1,
 				"blurScale": 2,
 				"useKernelBlur": false,
-				"renderList": [
-					"d66c05ad-967f-4f69-a6fb-7d47281b641c",
-					"f824df87-ae33-41d9-ba8f-551d2083a2be",
-					"2dacc31c-b006-4088-aaaf-50c86a795b6c",
-					"b6f5c00a-61f9-48a2-a448-70f69392c07a"
-				],
+				"renderList": [],
 				"numCascades": 4,
 				"debug": false,
 				"stabilizeCascades": true,
@@ -371,15 +493,15 @@
 			"checkCollisions": false,
 			"applyGravity": false,
 			"rotation": [
-				0.17217245306174717,
-				1.327837477142567,
+				0.26440417691355134,
+				19.48145762640049,
 				0
 			],
 			"speed": 2,
 			"position": [
-				-4.628809134220198,
-				2.063241488491201,
-				1.0651177195829378
+				-11.09651636871869,
+				5.340221837959919,
+				0.7044626347485744
 			],
 			"upVector": [
 				0,
@@ -389,7 +511,7 @@
 			"fov": 0.8,
 			"projectionPlaneTilt": 0,
 			"minZ": 1,
-			"maxZ": 10000,
+			"maxZ": 15000,
 			"inertia": 0.5,
 			"mode": 0,
 			"layerMask": 268435455,

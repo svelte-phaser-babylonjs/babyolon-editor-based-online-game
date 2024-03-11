@@ -3,6 +3,7 @@ import { Node } from "@babylonjs/core/node";
 import GeneralUI from "../UI/general_ui";
 import RoomUI from "../UI/room_ui";
 import { delay } from "../../helpers";
+import GameManager from "./game_manager";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -95,5 +96,11 @@ export default class UIManager extends Node {
 
     private async callStartGame() {
         this.roomUI.setVisible(false);
+
+        this._scene.activeCamera = this._scene.getCameraByName("PlayerCamera");
+
+        this.camera.dispose();
+
+        await GameManager.Instance.InitializeLocalGame();
     }
 }

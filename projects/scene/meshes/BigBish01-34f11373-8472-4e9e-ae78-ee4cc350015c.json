@@ -1,0 +1,153 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "BigBish01",
+			"id": "34f11373-8472-4e9e-ae78-ee4cc350015c",
+			"uniqueId": 591,
+			"type": "Mesh",
+			"position": [
+				-7.90836238861084,
+				1.1785728931427002,
+				17.055744171142578
+			],
+			"rotationQuaternion": [
+				0,
+				0,
+				0,
+				1
+			],
+			"scaling": [
+				1,
+				1,
+				1
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": false,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": true,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": 0,
+			"parentId": "2498fe4b-752c-44c2-9cf5-e5ffa14a198a",
+			"isUnIndexed": false,
+			"geometryId": "96070772-6e3e-4cad-9ef3-97c090309dce",
+			"subMeshes": null,
+			"materialId": "cd372ad5-ac3a-4bd0-bf85-b16cd56142ac",
+			"metadata": {
+				"basePoseMatrix": {
+					"0": -1,
+					"1": 0,
+					"2": 0,
+					"3": 0,
+					"4": 0,
+					"5": 1,
+					"6": 0,
+					"7": 0,
+					"8": 0,
+					"9": 0,
+					"10": 1,
+					"11": 0,
+					"12": 0,
+					"13": -1.1785728931427002,
+					"14": 0,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "Icosphere.000",
+					"name": "Icosphere.000",
+					"sceneFileName": "meshes/environment/BigBush.glb"
+				},
+				"isPickable": false,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
+			},
+			"instances": [],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.3,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/96070772-6e3e-4cad-9ef3-97c090309dce.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				1.4769296646118164,
+				0.518601655960083,
+				0.8243670463562012
+			],
+			"boundingBoxMinimum": [
+				-1.6578725576400757,
+				-1.3727329969406128,
+				-1.6736807823181152
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 5154,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 5154,
+					"stride": 3,
+					"offset": 20616,
+					"dataType": 1
+				},
+				"uvsAttrDesc": {
+					"count": 3436,
+					"stride": 2,
+					"offset": 41232,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 2604,
+					"stride": 1,
+					"offset": 54976,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 65392,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"uvs": null,
+			"hasUVs": true,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}

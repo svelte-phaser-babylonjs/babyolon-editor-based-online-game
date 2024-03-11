@@ -37,7 +37,7 @@
 	"layerMask": 268435455,
 	"fovMode": 0,
 	"cameraRigMode": 0,
-	"name": "camera",
+	"name": "PlayerCamera",
 	"id": "2e391261-067a-4ec6-8b00-25d7e0738684",
 	"state": "",
 	"metadata": {
@@ -69,6 +69,7 @@
 	},
 	"uniqueId": 45,
 	"type": "UniversalCamera",
+	"parentId": "ab76ecfd-be33-4702-8285-e2257d212e57",
 	"inputsmgr": {
 		"FreeCameraKeyboardMoveInput": {
 			"tags": null,

@@ -30,13 +30,13 @@
 	"lightmapMode": 0,
 	"position": [
 		50,
-		50,
+		76.81065368652344,
 		50
 	],
 	"direction": [
-		-1,
+		0,
 		-2,
-		-1
+		0
 	],
 	"name": "sun",
 	"id": "13d8b045-9a4a-48c0-ab96-3584968502c2",
@@ -44,13 +44,12 @@
 	"metadata": {
 		"script": {
 			"name": "None"
-		},
-		"_waitingParentId": null
+		}
 	},
 	"uniqueId": 42,
 	"type": 1,
+	"parentId": "ab76ecfd-be33-4702-8285-e2257d212e57",
 	"animations": [],
 	"ranges": [],
-	"isEnabled": true,
-	"parentId": null
+	"isEnabled": true
 }

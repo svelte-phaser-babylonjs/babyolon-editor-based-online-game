@@ -2,26 +2,24 @@
 	"materials": [],
 	"meshes": [
 		{
-			"name": "wall",
-			"id": "f824df87-ae33-41d9-ba8f-551d2083a2be",
-			"uniqueId": 13,
+			"name": "Wall01",
+			"id": "2748fef6-d9f6-41db-a45d-7506140a818e",
+			"uniqueId": 2981,
 			"type": "Mesh",
-			"tags": "modified",
 			"position": [
-				6.657844066619873,
-				0.5,
-				7.932335376739502
+				-5,
+				1,
+				-2.4629127979278564
 			],
-			"rotationQuaternion": [
+			"rotation": [
 				0,
 				0,
-				0,
-				1
+				0
 			],
 			"scaling": [
-				1,
-				1,
-				1
+				30,
+				10,
+				0.5
 			],
 			"localMatrix": {
 				"0": 1,
@@ -48,94 +46,124 @@
 			"receiveShadows": false,
 			"billboardMode": 0,
 			"visibility": 1,
-			"checkCollisions": false,
+			"checkCollisions": true,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
+			"parentId": "2498fe4b-752c-44c2-9cf5-e5ffa14a198a",
 			"isUnIndexed": false,
-			"geometryId": "67c0e7d5-7efc-4a84-9dc3-ec791595f195",
+			"geometryId": "43604a5e-8caf-407b-8a12-73f0b779280f",
 			"subMeshes": null,
-			"materialId": "965b4240-9156-4704-8e39-cc381d3c7123",
-			"physicsMass": 1,
-			"physicsFriction": 0.2,
-			"physicsRestitution": 1,
-			"physicsImpostor": 2,
+			"materialId": "410b6249-e78c-45ab-98a9-79ca95d91c77",
 			"metadata": {
-				"isPickable": true,
-				"script": {},
-				"_waitingParentId": null
+				"editorGeometry": {
+					"type": "Cube",
+					"size": 1
+				},
+				"isPickable": false,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
 			},
 			"instances": [
 				{
-					"name": "wall (Mesh Instance)",
-					"id": "2dacc31c-b006-4088-aaaf-50c86a795b6c",
+					"name": "Wall02",
+					"id": "e301d915-f3ca-477f-9786-34e075575344",
 					"isEnabled": true,
 					"isVisible": true,
 					"isPickable": true,
-					"checkCollisions": false,
+					"checkCollisions": true,
 					"position": [
-						1.2117912687991725,
-						0.5,
-						5.8558194030282396
+						-5,
+						1,
+						20
 					],
 					"scaling": [
-						1,
-						1,
-						1
+						30,
+						10,
+						0.5
 					],
-					"rotationQuaternion": [
+					"parentId": "2498fe4b-752c-44c2-9cf5-e5ffa14a198a",
+					"rotation": [
 						0,
-						0.3419781276477794,
 						0,
-						0.9397079121783097
+						0
 					],
-					"physicsMass": 1,
-					"physicsFriction": 0.2,
-					"physicsRestitution": 1,
-					"physicsImpostor": 2,
 					"metadata": {
-						"isPickable": true,
-						"script": {},
-						"_waitingParentId": null
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
 					},
 					"animations": [],
-					"ranges": [],
-					"parentId": null
+					"ranges": []
 				},
 				{
-					"name": "wall (Mesh Instance)",
-					"id": "b6f5c00a-61f9-48a2-a448-70f69392c07a",
+					"name": "Wall03",
+					"id": "b795a55c-942c-4ddc-96c1-7042f83e3c5f",
 					"isEnabled": true,
 					"isVisible": true,
 					"isPickable": true,
-					"checkCollisions": false,
+					"checkCollisions": true,
 					"position": [
-						6.865063848895148,
-						0.5200719833374023,
-						2.216538543643196
+						9,
+						1,
+						8.4446382522583
 					],
 					"scaling": [
-						1,
-						1,
-						1
+						25,
+						10,
+						0.5
 					],
-					"rotationQuaternion": [
+					"parentId": "2498fe4b-752c-44c2-9cf5-e5ffa14a198a",
+					"rotation": [
 						0,
-						0.3419781276477794,
-						0,
-						0.9397079121783097
+						1.5707963267948963,
+						0
 					],
-					"physicsMass": 1,
-					"physicsFriction": 0.2,
-					"physicsRestitution": 1,
-					"physicsImpostor": 2,
 					"metadata": {
-						"isPickable": true,
-						"script": {},
-						"_waitingParentId": null
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
 					},
 					"animations": [],
-					"ranges": [],
-					"parentId": null
+					"ranges": []
+				},
+				{
+					"name": "Wall04",
+					"id": "b13124c4-3600-45dd-930c-858e36f8850d",
+					"isEnabled": true,
+					"isVisible": true,
+					"isPickable": true,
+					"checkCollisions": true,
+					"position": [
+						-20,
+						1,
+						9
+					],
+					"scaling": [
+						25,
+						10,
+						0.5061432123184204
+					],
+					"parentId": "2498fe4b-752c-44c2-9cf5-e5ffa14a198a",
+					"rotation": [
+						0,
+						1.5707963267948966,
+						0
+					],
+					"metadata": {
+						"isPickable": false,
+						"script": {
+							"name": "None"
+						},
+						"renderingGroupId": 0
+					},
+					"animations": [],
+					"ranges": []
 				}
 			],
 			"animations": [],
@@ -150,8 +178,7 @@
 				0
 			],
 			"applyFog": true,
-			"parentId": null,
-			"delayLoadingFile": "geometries/67c0e7d5-7efc-4a84-9dc3-ec791595f195.babylonbinarymeshdata",
+			"delayLoadingFile": "geometries/43604a5e-8caf-407b-8a12-73f0b779280f.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				0.5,
 				0.5,

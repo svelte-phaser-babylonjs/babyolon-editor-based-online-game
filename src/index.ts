@@ -1,5 +1,6 @@
 import { BabylonFileLoaderConfiguration, Engine, Scene } from "@babylonjs/core";
 import "@babylonjs/materials";
+import "@babylonjs/loaders";
 
 import * as CANNON from "cannon";
 

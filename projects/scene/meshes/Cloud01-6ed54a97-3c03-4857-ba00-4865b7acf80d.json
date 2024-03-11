@@ -1,0 +1,145 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "Cloud01",
+			"id": "6ed54a97-3c03-4857-ba00-4865b7acf80d",
+			"uniqueId": 1006,
+			"type": "Mesh",
+			"position": [
+				-0.3247002959251404,
+				14.932380676269531,
+				2.947159767150879
+			],
+			"rotationQuaternion": [
+				0,
+				0,
+				0,
+				1
+			],
+			"scaling": [
+				1,
+				1,
+				1
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": false,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": false,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": 0,
+			"parentId": "2498fe4b-752c-44c2-9cf5-e5ffa14a198a",
+			"isUnIndexed": false,
+			"geometryId": "131a3ae8-6540-4208-bab3-67fd37689bfe",
+			"subMeshes": null,
+			"materialId": "97b9ccfd-b4c9-4446-af06-55e083beb3fa",
+			"metadata": {
+				"basePoseMatrix": {
+					"0": -1,
+					"1": 0,
+					"2": 0,
+					"3": 0,
+					"4": 0,
+					"5": 1,
+					"6": 0,
+					"7": 0,
+					"8": 0,
+					"9": 0,
+					"10": 1,
+					"11": 0,
+					"12": 0.4533036947250366,
+					"13": -0.3617730140686035,
+					"14": 0.026648402214050293,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "Icosphere.001",
+					"name": "Icosphere.001",
+					"sceneFileName": "meshes/environment/Cloud2.glb"
+				},
+				"isPickable": false,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
+			},
+			"instances": [],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.3,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/131a3ae8-6540-4208-bab3-67fd37689bfe.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				2.4867405891418457,
+				1.3836767673492432,
+				1.5409982204437256
+			],
+			"boundingBoxMinimum": [
+				-3.2308197021484375,
+				-1.7440346479415894,
+				-1.2556926012039185
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 1098,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 1098,
+					"stride": 3,
+					"offset": 4392,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 588,
+					"stride": 1,
+					"offset": 8784,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 11136,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}

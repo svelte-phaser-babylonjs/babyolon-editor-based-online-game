@@ -2,9 +2,9 @@
 	"materials": [],
 	"meshes": [
 		{
-			"name": "Managers",
-			"id": "f1334591-4c0a-4250-b3bb-0e758fa28d98",
-			"uniqueId": 70,
+			"name": "GameManager",
+			"id": "b0d3244a-0f34-4dfb-adc3-c1d5509e9643",
+			"uniqueId": 5627,
 			"type": "Mesh",
 			"position": [
 				0,
@@ -49,15 +49,15 @@
 			"checkCollisions": false,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
+			"parentId": "ec07c220-13d2-4dbb-8bfd-7c733f0ad3e4",
 			"isUnIndexed": false,
 			"materialId": "default material",
 			"metadata": {
 				"isPickable": false,
 				"script": {
-					"name": "None"
+					"name": "src/scenes/managers/game_manager.ts"
 				},
-				"renderingGroupId": 0,
-				"_waitingParentId": null
+				"renderingGroupId": 0
 			},
 			"instances": [],
 			"animations": [],
@@ -71,8 +71,7 @@
 				0,
 				0
 			],
-			"applyFog": true,
-			"parentId": null
+			"applyFog": true
 		}
 	],
 	"multiMaterials": [],

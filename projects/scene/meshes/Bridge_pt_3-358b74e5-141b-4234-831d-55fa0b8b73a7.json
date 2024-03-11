@@ -1,0 +1,153 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "Bridge_pt_3",
+			"id": "358b74e5-141b-4234-831d-55fa0b8b73a7",
+			"uniqueId": 1552,
+			"type": "Mesh",
+			"position": [
+				-0.17994649708271027,
+				0.012063815258443356,
+				0.0647037923336029
+			],
+			"rotationQuaternion": [
+				0.7071068286895752,
+				0,
+				0,
+				0.7071067094802856
+			],
+			"scaling": [
+				0.0074729155749082565,
+				0.009999999776482582,
+				0.009999999776482582
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": false,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": true,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": 0,
+			"parentId": "d824b6a4-064d-4237-9663-cbef1e08c148",
+			"isUnIndexed": false,
+			"geometryId": "eb2a42d6-61f1-4532-80b9-78ea5c4fe010",
+			"subMeshes": null,
+			"materialId": "d1883bf9-1230-47d6-b0f4-de30ea3a7ac5",
+			"metadata": {
+				"basePoseMatrix": {
+					"0": -133.8165740966797,
+					"1": 0,
+					"2": 0,
+					"3": 0,
+					"4": 0,
+					"5": -0.000013435886103252415,
+					"6": -100,
+					"7": 0,
+					"8": 0,
+					"9": 100,
+					"10": -0.000013435886103252415,
+					"11": 0,
+					"12": 24.079824447631836,
+					"13": -6.47037935256958,
+					"14": 1.206382393836975,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "Bridge_pt_3",
+					"name": "Bridge_pt_3",
+					"sceneFileName": "meshes/environment/pack.glb"
+				},
+				"isPickable": false,
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
+			},
+			"instances": [],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.3,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/eb2a42d6-61f1-4532-80b9-78ea5c4fe010.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				0.7357950806617737,
+				0.520092248916626,
+				1.2063815593719482
+			],
+			"boundingBoxMinimum": [
+				-0.7357950806617737,
+				-0.520092248916626,
+				-1.2063815593719482
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 657,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 657,
+					"stride": 3,
+					"offset": 2628,
+					"dataType": 1
+				},
+				"uvsAttrDesc": {
+					"count": 438,
+					"stride": 2,
+					"offset": 5256,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 1008,
+					"stride": 1,
+					"offset": 7008,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 11040,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"uvs": null,
+			"hasUVs": true,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}

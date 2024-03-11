@@ -1,0 +1,148 @@
+{
+	"materials": [],
+	"meshes": [
+		{
+			"name": "Door1_primitive1",
+			"id": "d2ba6d3b-a29a-4222-9854-ec4378b0ef7d",
+			"uniqueId": 1589,
+			"type": "Mesh",
+			"position": [
+				0,
+				0,
+				0
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"scaling": [
+				1,
+				1,
+				1
+			],
+			"localMatrix": {
+				"0": 1,
+				"1": 0,
+				"2": 0,
+				"3": 0,
+				"4": 0,
+				"5": 1,
+				"6": 0,
+				"7": 0,
+				"8": 0,
+				"9": 0,
+				"10": 1,
+				"11": 0,
+				"12": 0,
+				"13": 0,
+				"14": 0,
+				"15": 1
+			},
+			"isEnabled": true,
+			"isVisible": true,
+			"infiniteDistance": false,
+			"pickable": true,
+			"receiveShadows": false,
+			"billboardMode": 0,
+			"visibility": 1,
+			"checkCollisions": false,
+			"isBlocker": false,
+			"overrideMaterialSideOrientation": 0,
+			"parentId": "76d01bc6-5e6a-4f79-b3c1-83316eae3d68",
+			"isUnIndexed": false,
+			"geometryId": "57878afd-c898-43e6-8376-ada4358ef22c",
+			"subMeshes": null,
+			"materialId": "a562b630-1ec1-470d-8825-e9dfbe5afbfb",
+			"metadata": {
+				"basePoseMatrix": {
+					"0": -100,
+					"1": 0,
+					"2": 0,
+					"3": 0,
+					"4": 0,
+					"5": -0.000013435886103252415,
+					"6": -100,
+					"7": 0,
+					"8": 0,
+					"9": 100,
+					"10": -0.000013435886103252415,
+					"11": 0,
+					"12": 0,
+					"13": 0,
+					"14": 0,
+					"15": 1
+				},
+				"originalSourceFile": {
+					"id": "Door1_primitive1",
+					"name": "Door1_primitive1",
+					"sceneFileName": "meshes/environment/pack.glb"
+				},
+				"isPickable": false
+			},
+			"instances": [],
+			"animations": [],
+			"ranges": [],
+			"layerMask": 268435455,
+			"alphaIndex": 1.7976931348623157e+308,
+			"hasVertexAlpha": false,
+			"overlayAlpha": 0.5,
+			"overlayColor": [
+				1,
+				0,
+				0
+			],
+			"applyFog": true,
+			"delayLoadingFile": "geometries/57878afd-c898-43e6-8376-ada4358ef22c.babylonbinarymeshdata",
+			"boundingBoxMaximum": [
+				-16.003808975219727,
+				-3.8858323097229004,
+				-0.9891341924667358
+			],
+			"boundingBoxMinimum": [
+				-16.23337745666504,
+				-3.971853733062744,
+				-1.1823163032531738
+			],
+			"_binaryInfo": {
+				"positionsAttrDesc": {
+					"count": 102,
+					"stride": 3,
+					"offset": 0,
+					"dataType": 1
+				},
+				"normalsAttrDesc": {
+					"count": 102,
+					"stride": 3,
+					"offset": 408,
+					"dataType": 1
+				},
+				"uvsAttrDesc": {
+					"count": 68,
+					"stride": 2,
+					"offset": 816,
+					"dataType": 1
+				},
+				"indicesAttrDesc": {
+					"count": 144,
+					"stride": 1,
+					"offset": 1088,
+					"dataType": 0
+				},
+				"subMeshesAttrDesc": {
+					"count": 1,
+					"stride": 5,
+					"offset": 1664,
+					"dataType": 0
+				}
+			},
+			"positions": null,
+			"normals": null,
+			"uvs": null,
+			"hasUVs": true,
+			"indices": null
+		}
+	],
+	"multiMaterials": [],
+	"lods": []
+}

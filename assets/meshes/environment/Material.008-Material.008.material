@@ -37,9 +37,9 @@
 		1
 	],
 	"emissive": [
-		0,
-		0,
-		0
+		1,
+		1,
+		1
 	],
 	"microSurface": 1,
 	"useLightmapAsShadowmap": false,
@@ -97,10 +97,11 @@
 		"_colorGradingBGR": true,
 		"_exposure": 1,
 		"_toneMappingEnabled": false,
+		"_toneMappingType": 0,
 		"_contrast": 1,
 		"vignetteStretch": 0,
-		"vignetteCentreX": 0,
-		"vignetteCentreY": 0,
+		"vignetteCenterX": 0,
+		"vignetteCenterY": 0,
 		"vignetteWeight": 1.5,
 		"vignetteColor": [
 			0,
@@ -111,6 +112,8 @@
 		"vignetteCameraFov": 0.5,
 		"_vignetteBlendMode": 0,
 		"_vignetteEnabled": false,
+		"_ditheringEnabled": false,
+		"_ditheringIntensity": 0.00392156862745098,
 		"_skipFinalColorClamp": false,
 		"_applyByPostProcess": true,
 		"_isEnabled": true
@@ -163,7 +166,7 @@
 		"mask": 255,
 		"enabled": false
 	},
-	"uniqueId": 1393,
+	"uniqueId": 1010,
 	"customType": "BABYLON.PBRMaterial",
 	"clearCoat": {
 		"tags": null,

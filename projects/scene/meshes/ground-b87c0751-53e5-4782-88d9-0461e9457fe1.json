@@ -8,9 +8,9 @@
 			"type": "Mesh",
 			"tags": "modified",
 			"position": [
-				0,
-				0,
-				0
+				-2.700831174850464,
+				0.17636774480342865,
+				-5.329070518200751e-15
 			],
 			"rotationQuaternion": [
 				0,
@@ -20,7 +20,7 @@
 			],
 			"scaling": [
 				100,
-				0.1,
+				0.10000000149011612,
 				100
 			],
 			"localMatrix": {
@@ -51,6 +51,7 @@
 			"checkCollisions": true,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": null,
+			"parentId": "ab76ecfd-be33-4702-8285-e2257d212e57",
 			"isUnIndexed": false,
 			"geometryId": "0d38a45c-03a7-4a42-bfc3-977788ff849d",
 			"subMeshes": null,
@@ -61,8 +62,10 @@
 			"physicsImpostor": 2,
 			"metadata": {
 				"isPickable": true,
-				"script": {},
-				"_waitingParentId": null
+				"script": {
+					"name": "None"
+				},
+				"renderingGroupId": 0
 			},
 			"instances": [],
 			"animations": [],
@@ -77,7 +80,6 @@
 				0
 			],
 			"applyFog": true,
-			"parentId": null,
 			"delayLoadingFile": "geometries/0d38a45c-03a7-4a42-bfc3-977788ff849d.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				0.5,
