@@ -9,6 +9,7 @@ export interface ISceneScriptMap {
 	"src/scenes/scene/camera.ts": ScriptMap;
 	"src/scenes/UI/general_ui.ts": ScriptMap;
 	"src/scenes/UI/main_menu_ui.ts": ScriptMap;
+	"src/scenes/UI/room_ui.ts": ScriptMap;
 	"src/scenes/UI/ui.ts": ScriptMap;
 }
 
@@ -21,5 +22,6 @@ export const scriptsMap: ISceneScriptMap = {
 	"src/scenes/scene/camera.ts": require("./scene/camera"),
 	"src/scenes/UI/general_ui.ts": require("./UI/general_ui"),
 	"src/scenes/UI/main_menu_ui.ts": require("./UI/main_menu_ui"),
+	"src/scenes/UI/room_ui.ts": require("./UI/room_ui"),
 	"src/scenes/UI/ui.ts": require("./UI/ui"),
 }

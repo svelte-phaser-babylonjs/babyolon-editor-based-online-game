@@ -1,6 +1,8 @@
 import { ArcRotateCamera, Camera, Vector3 } from "@babylonjs/core";
 import { Node } from "@babylonjs/core/node";
 import GeneralUI from "../UI/general_ui";
+import RoomUI from "../UI/room_ui";
+import { delay } from "../../helpers";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -22,11 +24,11 @@ import GeneralUI from "../UI/general_ui";
  */
 export default class UIManager extends Node {
 
-    private _camera: Camera;
-    private _uiLayer: number = 2;
+    private camera: Camera;
+    private layer: number = 2;
 
-    private _generalUI: GeneralUI;
-
+    private generalUI: GeneralUI;
+    private roomUI: RoomUI;
 
     /**
      * Override constructor.
@@ -59,17 +61,39 @@ export default class UIManager extends Node {
     }
 
     private initializeUICamera() {
-        this._camera = new ArcRotateCamera("ui-cam", 0, 0.8, 100, Vector3.Zero(), this._scene);
-        this._camera.layerMask = this._uiLayer;
+        this.camera = new ArcRotateCamera("ui-cam", 0, 0.8, 100, Vector3.Zero(), this._scene);
+        this.camera.layerMask = this.layer;
 
-        this._scene.activeCameras = [this._scene.activeCamera, this._camera];
+        this._scene.activeCameras = [this._scene.activeCamera, this.camera];
     }
 
     private loadUI() {
         this.loadGeneralUI();
+        this.loadRoomUI();
     }
 
     private loadGeneralUI() {
-        this._generalUI = new GeneralUI(this._scene, this._uiLayer);
+        this.generalUI = new GeneralUI(this._scene, this.layer);
+        this.generalUI.addListener('create-join-room', this.callCreateJoinRoom);
+    }
+
+    private async loadRoomUI() {
+        this.roomUI = new RoomUI(this._scene, this.layer);
+        this.roomUI.addListener('start-game', this.callStartGame);
+
+        while (!this.roomUI.loaded()) {
+            await delay(100);
+        }
+
+        this.roomUI.setVisible(false);
+    }
+
+    private async callCreateJoinRoom() {
+        this.generalUI.setVisible(false);
+        this.roomUI.setVisible(true);
+    }
+
+    private async callStartGame() {
+        this.roomUI.setVisible(false);
     }
 }

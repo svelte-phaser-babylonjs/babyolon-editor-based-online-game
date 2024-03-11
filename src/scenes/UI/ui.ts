@@ -61,7 +61,7 @@ export default class UI extends EventEmitter {
 
             return texture;
         } catch (error) {
-            console.log(error);
+            console.error(error);
             return;
         }
     }
@@ -72,5 +72,14 @@ export default class UI extends EventEmitter {
 
     public getControl(name: string) {
         return this.texture.getControlByName(name);
+    }
+
+    public setVisible(visible: boolean) {
+        if (!this.root) {
+            console.warn(`no root defined in '${this.name}' gui`);
+            return;
+        };
+
+        this.root.isVisible = visible;
     }
 }
