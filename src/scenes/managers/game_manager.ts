@@ -26,7 +26,7 @@ export default class GameManager extends Node {
     // GameManager Components
     private static instance: GameManager = null;
     private localPlayer: Player = null;
-    private enemies: Map<string, Enemy> = null;
+    private enemies: Map<string, Enemy> = new Map<string, Enemy>();
 
     /**
      * Override constructor.
@@ -40,7 +40,6 @@ export default class GameManager extends Node {
      * This function is called immediatly after the constructor has been called.
      */
     public onInitialize(): void {
-        this.enemies = new Map<string, Enemy>();
     }
 
     /**
@@ -60,7 +59,11 @@ export default class GameManager extends Node {
      * Called each frame.
      */
     public onUpdate(): void {
-        // ...
+        if (!GameManager.instance) return;
+
+        GameManager.instance.enemies.forEach(e => {
+            e.updateMe();
+        });
     }
 
     /**
@@ -81,11 +84,12 @@ export default class GameManager extends Node {
         return GameManager.instance;
     }
 
-    public async InitializeLocalGame() {
-        const p = new Player();
-        const e = new Enemy();
+    public async InitializeLocalGame(scene: Scene) {
+        this._scene = scene;
+        const p = await (new Player()).initialize(true, scene);
+        const e = await (new Enemy()).initialize(new Vector3(-15, 1.5, 1), scene);
 
-        await p.initialize(true)
-        await e.initialize(new Vector3(-9, 2, 8));
+        GameManager.instance.enemies.set(`enemy`, e);
+        GameManager.instance.localPlayer = p;
     }
 }

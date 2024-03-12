@@ -61,6 +61,9 @@ export default class UIManager extends Node {
         this.loadUI();
     }
 
+    public onUpdate(): void {
+    }
+
     private initializeUICamera() {
         this.camera = new ArcRotateCamera("ui-cam", 0, 0.8, 100, Vector3.Zero(), this._scene);
         this.camera.layerMask = this.layer;
@@ -101,6 +104,6 @@ export default class UIManager extends Node {
 
         this.camera.dispose();
 
-        await GameManager.Instance.InitializeLocalGame();
+        GameManager.Instance.InitializeLocalGame(this._scene);
     }
 }

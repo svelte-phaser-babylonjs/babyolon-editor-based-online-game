@@ -1,5 +1,6 @@
-import { Camera, Mesh, SceneLoader, Vector3 } from "@babylonjs/core";
+import { Camera, Mesh, Scene, SceneLoader, Vector3 } from "@babylonjs/core";
 import { Node } from "@babylonjs/core/node";
+import { delay } from "../../helpers";
 
 /**
  * This represents a script that is attached to a node in the editor.
@@ -23,7 +24,6 @@ export default class Enemy extends Node {
 
     private mesh: Mesh;
     private target: Camera | Mesh;
-    private direction: Vector3;
     private life: number = 100;
     private speed: number = 0.03;
     private canAttack: boolean;
@@ -35,49 +35,67 @@ export default class Enemy extends Node {
     // @ts-ignore ignoring the super call as we don't want to re-init
     public constructor() { }
 
-    public async initialize(position: Vector3): Promise<Enemy> {
-        const loadedAsset = await SceneLoader.ImportMeshAsync(null, "./assets/meshes/enemy/", "Human.glb", this._scene);
-        this.mesh = loadedAsset.meshes[0] as Mesh;
-        this.mesh.position = position;
-        this.mesh.checkCollisions = true;
+    public async initialize(position: Vector3, scene: Scene) {
+        this._scene = scene;
+        const loadedAsset = SceneLoader.ImportMeshAsync(null, "./assets/meshes/enemy/", "Human.glb", this._scene);
+
+        loadedAsset.then(asset => {
+            this.mesh = asset.meshes[0] as Mesh;
+            this.mesh.position = position;
+            this.mesh.scaling = new Vector3(0.7, 0.7, 0.7);
+            this.mesh.checkCollisions = true;
+
+            if (asset.animationGroups && asset.animationGroups[0]) {
+                asset.animationGroups[0].stop();
+            }
+
+            const walkAnim = asset.animationGroups[2];
+            if (walkAnim) {
+                walkAnim.start(true, 1.5, walkAnim.from, walkAnim.to, false);
+            }
+        });
 
         return this;
     }
 
-    /**
-     * Called on the node is being initialized.
-     * This function is called immediatly after the constructor has been called.
-     */
-    public onInitialize(): void {
-        // ...
+    public updateMe() {
+        if (!this.mesh || !this.life || this.life <= 0) return;
+        this.determineTarget();
+        this.updatePosition();
+        this.updateRotation();
     }
 
-    /**
-     * Called on the node has been fully initialized and is ready.
-     */
-    public onInitialized(): void {
-        // ...
+    private determineTarget() {
+        let distance = 1000;
+
+        const checkTarget = (meshOrCam: any) => {
+            const rawDir = meshOrCam.position.subtract(this.mesh.position);
+
+            if (distance > rawDir.length()) {
+                distance = rawDir.length();
+                this.target = meshOrCam;
+            }
+        };
+
+        this._scene.getCamerasByTags("player", checkTarget);
+        this._scene.getMeshesByTags("player", checkTarget);
     }
 
-    /**
-     * Called on the scene starts.
-     */
-    public onStart(): void {
-        // ...
+    private updatePosition() {
+        if (!this.target) return;
+
+        const rawDir = this.target.position.subtract(this.mesh.position);
+        const distance = rawDir.length();
+
+        if (distance > 2) {
+            const direction = rawDir.normalize().scaleInPlace(this.speed);
+            this.mesh.moveWithCollisions(new Vector3(direction.x, 0, direction.z));
+        }
     }
 
-    /**
-     * Called each frame.
-     */
-    public onUpdate(): void {
-        // ...
-    }
+    private updateRotation() {
+        if (!this.target) return;
 
-    /**
-     * Called on the object has been disposed.
-     * Object can be disposed manually or when the editor stops running the scene.
-     */
-    public onStop(): void {
-        // ...
+        this.mesh.lookAt(this.target.position);
     }
 }

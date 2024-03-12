@@ -7,9 +7,9 @@
 			"uniqueId": 591,
 			"type": "Mesh",
 			"position": [
-				-7.90836238861084,
+				-6.269400596618652,
 				1.1785728931427002,
-				17.055744171142578
+				17.169029235839844
 			],
 			"rotationQuaternion": [
 				0,
@@ -47,7 +47,7 @@
 			"receiveShadows": false,
 			"billboardMode": 0,
 			"visibility": 1,
-			"checkCollisions": true,
+			"checkCollisions": false,
 			"isBlocker": false,
 			"overrideMaterialSideOrientation": 0,
 			"parentId": "2498fe4b-752c-44c2-9cf5-e5ffa14a198a",

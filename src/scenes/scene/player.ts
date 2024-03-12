@@ -31,9 +31,15 @@ export default class Player extends Node {
     // @ts-ignore ignoring the super call as we don't want to re-init
     public constructor() { }
 
-    public async initialize(isLocal: boolean): Promise<Player> {
+    public initialize(isLocal: boolean, scene: Scene) {
+        this._scene = scene;
         this.isLocal = isLocal;
 
+        if (this.isLocal) {
+            const m = scene.getCameraByName("PlayerCamera") as Camera;
+            this.meshOrCamera = m;
+            Tags.AddTagsTo(m, "player");
+        }
         return this;
     }
 
@@ -56,10 +62,7 @@ export default class Player extends Node {
      * Called on the scene starts.
      */
     public onStart(): void {
-        if (this.isLocal) {
-            this.meshOrCamera = this._scene.getNodeByName("PlayerCamera") as Camera;
-            Tags.AddTagsTo(this.meshOrCamera, "player");
-        }
+
     }
 
     /**
